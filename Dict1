@@ -1,0 +1,12 @@
+#def update_dictionary(d, key, val):
+key = int(input())
+val = int(input())
+d = {}
+if d.get(key) == None:
+  if d.get(key * 2) == None:
+    d[key * 2] = [val]
+  else:
+    d[key * 2].append(val)
+else:
+    d[key].append(val)
+print(d)
